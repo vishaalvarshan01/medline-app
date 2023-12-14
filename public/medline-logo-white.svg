@@ -1,0 +1,13 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0_1_2)">
+    <!-- Set the background color here -->
+    <rect width="1440" height="1024" transform="translate(-673 -568)" fill="white"/>
+    <path d="M47 238V60.5L131 126.5V162H80V196H131V238H47Z" fill="#EC3E3E" stroke="#FF0000"/>
+    <path d="M253 238.5V61L169 127V162.5H220V196.5H169V238.5H253Z" fill="#EC3E3E" stroke="#FF0000"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_1_2">
+      <rect width="1440" height="1024" fill="white" transform="translate(-673 -568)"/>
+    </clipPath>
+  </defs>
+</svg>

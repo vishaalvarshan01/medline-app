@@ -1,0 +1,89 @@
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import ExcelJS from "exceljs";
+import fs from "fs";
+import path from "path"; // Import the 'path' module to work with file paths
+import { supabase } from "./supabaseClient.js";
+
+dotenv.config();
+
+const PORT = process.env.PORT || 4000;
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+const excelFilePath = "./data_1695961566140.xlsx"; // Specify the path to your existing Excel file
+
+// console.log(supabase)
+
+app.get("/", async (req, res) => {
+  try {
+    const { data, error } = await supabase.from("customerinfo").select("*");
+
+    if (error) {
+      console.error(error);
+      res.status(500).json({ error: "Internal server error" });
+    } else {
+      console.log(data);
+      res.status(200).json(data);
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+
+// app.post("/", (req, res) => {
+//   const { name, number, email, productid } = req.body;
+
+//   // Check if the Excel file exists
+//   if (fs.existsSync(excelFilePath)) {
+//     // Read the existing Excel file
+//     const workbook = new ExcelJS.Workbook();
+//     workbook.xlsx.readFile(excelFilePath).then(() => {
+//       const worksheet = workbook.getWorksheet(1); // Get the first worksheet
+
+//       // Add the data to the worksheet
+//       worksheet.addRow({ name, number, email, productid });
+
+//       // Save the updated Excel file
+//       workbook.xlsx.writeFile(excelFilePath).then(() => {
+//         console.log(`Data appended to Excel file: ${excelFilePath}`);
+//         res
+//           .status(200)
+//           .json({ message: `Data appended to Excel file: ${excelFilePath}` });
+//       });
+//     });
+//   } else {
+//     // If the Excel file doesn't exist, create a new one
+//     const workbook = new ExcelJS.Workbook();
+//     const worksheet = workbook.addWorksheet("Data");
+
+//     // Define the Excel columns
+//     worksheet.columns = [
+//       { header: "Name", key: "name", width: 20 },
+//       { header: "Number", key: "number", width: 15 },
+//       { header: "Email", key: "email", width: 30 },
+//       { header: "Product ID", key: "productid", width: 15 },
+//     ];
+
+//     // Add the data to the worksheet
+//     worksheet.addRow({ name, number, email, productid });
+
+//     // Save the Excel file
+//     workbook.xlsx.writeFile(excelFilePath).then(() => {
+//       console.log(`Excel file saved at: ${excelFilePath}`);
+//       res
+//         .status(200)
+//         .json({ message: `Excel file saved at: ${excelFilePath}` });
+//     });
+//   }
+// });
+
+app.listen(PORT, () => {
+  console.log(`server running on http://localhost:${PORT}`);
+});

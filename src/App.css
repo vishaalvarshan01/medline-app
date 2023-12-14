@@ -1,0 +1,159 @@
+.gradient-text-header {
+  background: linear-gradient(to bottom, #fa7268, #c62368);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-sub {
+  background: linear-gradient(to left, #4158d0 0%, #cb50c0 46%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-list-header {
+  background: linear-gradient(to left, #00cc8e 0%, #4158d0 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-list-header-reverse {
+  background: linear-gradient(to right, #00cc8e 0%, #4158d0 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-list-header-2 {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(to left, #fdbb2d 0%, #ff4c11 35%, #560090 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-list-item {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(to left, #ff4c11 0%, #560090 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-header-3 {
+   background: rgb(34, 193, 195);
+  background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-header-4 {
+   background: rgb(34, 193, 195);
+  background:linear-gradient(to right top, #e75fcb, #d273dc, #bb83e7, #ff869c, #ff8f6c, #f4a440);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-header-7 {
+   background: rgb(34, 193, 195);
+   background: linear-gradient(
+  to bottom,
+  hsl(315deg 73% 50%) 0%,
+  hsl(322deg 75% 45%) 7%,
+  hsl(328deg 77% 40%) 14%,
+  hsl(335deg 80% 35%) 21%,
+  hsl(342deg 82% 29%) 28%,
+  hsl(349deg 84% 34%) 35%,
+  hsl(356deg 87% 38%) 42%,
+  hsl(3deg 90% 42%) 48%,
+  hsl(10deg 92% 46%) 54%,
+  hsl(17deg 95% 50%) 60%,
+  hsl(21deg 96% 52%) 66%,
+  hsl(24deg 96% 54%) 71%,
+  hsl(28deg 96% 57%) 76%,
+  hsl(32deg 97% 59%) 80%,
+  hsl(35deg 97% 61%) 85%,
+  hsl(39deg 98% 63%) 89%,
+  hsl(43deg 98% 65%) 93%,
+  hsl(47deg 99% 68%) 96%,
+  hsl(50deg 100% 70%) 100%
+);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-header-6{
+   background: rgb(34, 193, 195);
+   background: linear-gradient(
+  to bottom,
+  hsl(223deg 68% 6%) 0%,
+  hsl(248deg 48% 15%) 8%,
+  hsl(255deg 58% 22%) 15%,
+  hsl(258deg 66% 29%) 23%,
+  hsl(260deg 73% 36%) 31%,
+  hsl(262deg 81% 42%) 38%,
+  hsl(264deg 92% 48%) 46%,
+  hsl(264deg 100% 58%) 54%,
+  hsl(265deg 99% 66%) 62%,
+  hsl(267deg 97% 72%) 69%,
+  hsl(268deg 94% 78%) 77%,
+  hsl(269deg 87% 83%) 85%,
+  hsl(270deg 73% 89%) 92%,
+  hsl(270deg 27% 94%) 100%
+);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.gradient-text-header-5 {
+   background: rgb(34, 193, 195);
+   background: linear-gradient(
+  270deg,
+  hsl(267deg 46% 59%) 0%,
+  hsl(297deg 31% 52%) 3%,
+  hsl(324deg 40% 52%) 7%,
+  hsl(339deg 48% 52%) 12%,
+  hsl(349deg 56% 52%) 17%,
+  hsl(355deg 62% 50%) 22%,
+  hsl(0deg 72% 48%) 29%,
+  hsl(7deg 71% 57%) 38%,
+  hsl(9deg 75% 66%) 48%,
+  hsl(11deg 77% 74%) 59%,
+  hsl(13deg 73% 82%) 69%,
+  hsl(19deg 50% 89%) 77%,
+  hsl(174deg 100% 96%) 83%,
+  hsl(219deg 60% 89%) 87%,
+  hsl(233deg 54% 81%) 90%,
+  hsl(239deg 52% 74%) 92%,
+  hsl(240deg 51% 66%) 94%,
+  hsl(238deg 51% 57%) 96%,
+  hsl(231deg 62% 46%) 97%,
+  hsl(232deg 62% 46%) 98%,
+  hsl(233deg 62% 46%) 98%,
+  hsl(233deg 63% 46%) 99%,
+  hsl(234deg 63% 46%) 99%,
+  hsl(235deg 64% 46%) 100%,
+  hsl(235deg 64% 46%) 100%
+);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.background-div {
+  background-image: url("./layered-waves-haikei-blue.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.background-div-flipped {
+  background-image: url("./layered-waves-haikei-blue-upside.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.background-div-blob {
+  background-image: url("./blob-scene-haikei-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.background-div-waves {
+  background-image: url("./blob-scene-haikei-red-yellow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.background-div-wave-seperator {
+  background-image: url("./stacked-waves-haikei-seperator.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
